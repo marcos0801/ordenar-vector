@@ -21,5 +21,10 @@ namespace ordenar_vector
         {
 
         }
+
+        private void btncalcular_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

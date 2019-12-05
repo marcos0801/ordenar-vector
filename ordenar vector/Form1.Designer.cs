@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btncalcular = new System.Windows.Forms.Button();
+            this.btngenerar = new System.Windows.Forms.Button();
             this.btnordenar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,14 +36,15 @@
             this.lstNumeros = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // btncalcular
+            // btngenerar
             // 
-            this.btncalcular.Location = new System.Drawing.Point(441, 39);
-            this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(99, 57);
-            this.btncalcular.TabIndex = 0;
-            this.btncalcular.Text = "calcular";
-            this.btncalcular.UseVisualStyleBackColor = true;
+            this.btngenerar.Location = new System.Drawing.Point(441, 39);
+            this.btngenerar.Name = "btngenerar";
+            this.btngenerar.Size = new System.Drawing.Size(99, 57);
+            this.btngenerar.TabIndex = 0;
+            this.btngenerar.Text = "generar";
+            this.btngenerar.UseVisualStyleBackColor = true;
+            this.btngenerar.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // btnordenar
             // 
@@ -100,7 +101,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btnordenar);
-            this.Controls.Add(this.btncalcular);
+            this.Controls.Add(this.btngenerar);
             this.Name = "Form1";
             this.Text = "ordenar vector";
             this.ResumeLayout(false);
@@ -110,7 +111,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btncalcular;
+        private System.Windows.Forms.Button btngenerar;
         private System.Windows.Forms.Button btnordenar;
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.Label label1;
